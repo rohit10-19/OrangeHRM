@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Orange HRM Application Test Automation Tes]">
+  <listeners>
+    <listener class-name="com.orangehrm.generics.CustomListener"/>
+  </listeners>
+  <test thread-count="5" name=" Orange HRM Application TestCases(failed)">
+    <classes>
+      <class name="com.orangehrm.test.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.orangehrm.test.LoginPageTest -->
+      <class name="com.orangehrm.test.AddEmployeePageTest">
+        <methods>
+          <include name="verifyAddEmployeePageLabel"/>
+          <include name="tearDown"/>
+          <include name="fillData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.orangehrm.test.AddEmployeePageTest -->
+      <class name="com.orangehrm.test.OpenPIMPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="openPIMPage"/>
+          <include name="tearDown"/>
+          <include name="openPIMPageTitleTest"/>
+        </methods>
+      </class> <!-- com.orangehrm.test.OpenPIMPageTest -->
+    </classes>
+  </test> <!--  Orange HRM Application TestCases(failed) -->
+</suite> <!-- Failed suite [Orange HRM Application Test Automation Tes] -->
